@@ -14,15 +14,15 @@ The Iris dataset is used for this analysis. It contains measurements for 150 iri
 ## Algorithms Implemented
 
 1.  **Branch and Bound:**
-    -      A systematic search method that explores feature subsets while pruning branches that cannot lead to better solutions.
-    -      The objective is to maximize the accuracy of a RandomForestClassifier.
+    - A systematic search method that explores feature subsets while pruning branches that cannot lead to better solutions.
+    - The objective is to maximize the accuracy of a RandomForestClassifier.
 2.  **Greedy Forward Selection:**
-    -      A heuristic algorithm that iteratively adds the feature that provides the most significant improvement in accuracy.
-    -      It starts with an empty set and adds one feature at a time until all features are considered.
+    - A heuristic algorithm that iteratively adds the feature that provides the most significant improvement in accuracy.
+    - It starts with an empty set and adds one feature at a time until all features are considered.
 3.  **Ant Colony Optimization (ACO):**
-    -      A probabilistic technique inspired by the foraging behavior of ants.
-    -      Ants explore different feature subsets, and pheromone levels are updated based on the accuracy of the solutions.
-    -   This implementation has been tested with the iris data set, it is better suited for larger data sets.
+    - A probabilistic technique inspired by the foraging behavior of ants.
+    - Ants explore different feature subsets, and pheromone levels are updated based on the accuracy of the solutions.
+    - This implementation has been tested with the iris data set, it is better suited for larger data sets.
 
 ## Dependencies
 
@@ -32,15 +32,15 @@ The Iris dataset is used for this analysis. It contains measurements for 150 iri
 
 ## Code Overview
 1. **load_iris():**
-   -      Loads the Iris dataset from scikit-learn.
+   - Loads the Iris dataset from scikit-learn.
 2. **train_test_split():**
-   -      Splits the dataset into training and testing sets.
+   - Splits the dataset into training and testing sets.
 3. **RandomForestClassifier():**
-   -      A machine learning model used for classification.
+   - A machine learning model used for classification.
 4. **accuracy_score():**
-   -      Calculates the accuracy of the model's predictions.
+   - Calculates the accuracy of the model's predictions.
 5. **objective_function():**
-   -      A function that trains a RandomForestClassifier using selected features and returns the accuracy.
+   - A function that trains a RandomForestClassifier using selected features and returns the accuracy.
 
 ### Branch and Bound Implementation:
  Uses a `while` loop to explore feature subsets.
